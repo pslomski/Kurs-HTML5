@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <p>last time , when i git push my own github repo, i got this error</p>
+  <pre>fatal: remote error:    You can't push to git://github.com/user/repo.git   Use     https://github.com/user/repo.git</pre>
+  <p>Solution:</p>
+  <pre>
+git remote rm origin
+git remote add origin git@github.com:user/repo.git
+git push origin master
+  </pre>
+</body>
+</html>
