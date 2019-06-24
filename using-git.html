@@ -13,5 +13,25 @@ git remote rm origin
 git remote add origin git@github.com:user/repo.git
 git push origin master
   </pre>
+  <h2>Ustawienie własnego narzędzia merge</h2>
+  <p>Otwieramy plik C:\Users\pslomski\.gitconfig i dodajemy poniższe wpisy</p>
+  <pre>
+[mergetool]
+   prompt = false
+   keepBackup = false
+   keepTemporaries = false
+[merge]
+   tool = winmerge
+   [mergetool "winmerge"]
+   name = WinMerge
+   trustExitCode = true
+   cmd = \"C:\\Program Files (x86)\\WinMerge\\WinMergeU.exe\" -e -u -dl \"Base\" -dr \"Mine\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[diff]
+   tool = winmerge
+   [difftool "winmerge"]
+   name = WinMerge
+   trustExitCode = true
+   cmd = \"C:\\Program Files (x86)\\WinMerge\\WinMergeU.exe\" -u -e $LOCAL $REMOTE
+  </pre>
 </body>
 </html>
