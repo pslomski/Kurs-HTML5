@@ -8,26 +8,18 @@
 
 <body>
   <h1>Kurs HTML 5</h1>
-  <h2>Formatowanie</h2>
-  <h3>Formatowanie podstawowe</h3>
-  <ul>
-    <li>Tag &lt;b&gt; - pogrubienie, b - bold. <b>To jest tekst pogrubiony</b> tagiem &lt;b&gt;</li>
-    <li>Tag &lt;i&gt; - pochylenie, i - italic. <i>To jest tekst pochylony</i> tagiem &lt;i&gt;</li>
-    <li>Tag &lt;s&gt; - przekreślenie, s - strike through. <s>To jest tekst przekreślony</s> tagiem &lt;s&gt;</li>
-    <li>Tag &lt;u&gt; - podkreślenie, u - underline. <u>To jest tekst podkreślony</u> tagiem &lt;u&gt;</li>
-  </ul>
-  <b><i><u><s>To jest tekst pogrubiony, pochylony, podkreślony i przekreślony</s></u></i></b>
-  <h2>Formatowanie semantyczne.</h2>
-  Roboty zwracają na niego uwagę.
-  <ul>
-    <li>Tag &lt;strong&gt; - pogrubienie. <strong>Tekst pogrubiony</strong> tagiem &lt;strong&gt;</li>
-    <li>Tag &lt;em&gt; - pochylenie, em - emphasis. <em>Tekst pochylony</em> tagiem &lt;em&gt;</li>
-  </ul>
-  <hr>
-  Indeks górny &lt;sup&gt; x <sup>2</sup><br>
-  Indeks dolny &lt;sub&gt; x <sub>i</sub><br>
-  <hr>
-  Tekst preformatowany wstawiamy za pomocą tagu &lt;pre&gt;
+  <h2>Nagłówki</h2>
+  <p>Nagłówki mają znaczenie semantyczne. Roboty zwracają na nie uwagę.</p>
+  <h1>Nagłówek 1</h1>
+  <h2>Nagłówek 2</h2>
+  <h3>Nagłówek 3</h3>
+  <h4>Nagłówek 4</h4>
+  <h5>Nagłówek 5</h5>
+  <h6>Nagłówek 6</h6>
+  <h2>Paragrafy</h2>
+  <p>Paragraf tworzymy za pomocą tagu &lt;p&gt;. </p>
+  <h2>Tekst preformatowany</h2>
+  <p>Tekst preformatowany wstawiamy za pomocą tagu &lt;pre&gt;</p>
   <pre>
   <code>
   #include &lt;iostream&gt;
@@ -39,18 +31,24 @@
     return 0;
   }
   </code>
-  </pre>
-  <var>int i;</var>
-  <hr>
-  Nagłówki mają znaczenie semantyczne. Roboty zwracają na nie uwagę.
-  <h1>Nagłówek 1</h1>
-  <h2>Nagłówek 2</h2>
-  <h3>Nagłówek 3</h3>
-  <h4>Nagłówek 4</h4>
-  <h5>Nagłówek 5</h5>
-  <h6>Nagłówek 6</h6>
-  <hr>
-  <p>Cytowanie: &lt;cite&gt; i &lt;blockquote></p>
+  </pre>  <h2>Formatowanie</h2>
+  <p>Do formatowania służą nast. elementy</p>
+  <ul>
+    <li>&lt;b&gt; - tekst pogrubiony (b - bold). <b>To jest tekst pogrubiony</b></li>
+    <li>&lt;strong&gt; - tekst ważny. <strong>To jest tekst ważny</strong></li>
+    <li>&lt;i&gt; - tekst pochylony (i - italic). <i>To jest tekst pochylony</i></li>
+    <li>&lt;em&gt; - tekst zaakcentowany (em - emphasize). <em>To jest tekst zaakcentowany</em></li>
+    <li>&lt;mark&gt; - tekst zaznaczony. <mark>To jest tekst zaznaczony</mark></li>
+    <li>&lt;small&gt; - tekst pomniejszony. <small>To jest tekst pomniejszony</small></li>
+    <li>&lt;del&gt; - tekst skasowany (del - delete). <del>To jest tekst skasowany</del></li>
+    <li>&lt;ins&gt; - tekst wstawiony (ins - insert). <ins>To jest tekst wstawiony</ins></li>
+    <li>&lt;s&gt; - tekst przekreślony (s - strike through). <s>To jest tekst przekreślony</s></li>
+    <li>&lt;u&gt; - tekst podkreślony (u - underline). <u>To jest tekst podkreślony</u></li>
+    <li>&lt;sup&gt; - Indeks górny (sup - superscript). <sup>To jest indeks górny</sup></li>
+    <li>&lt;sub&gt; - Indeks dolny (sub - subscript). <sub>To jest indeks dolny</sub></li>
+    <li>&lt;var&gt; - Zmienna (var - variable). <var>var i;</var></li>
+  </ul>
+  <p>Cytowanie: &lt;cite&gt; i &lt;blockquote&gt;</p>
   <cite>Albert Einstein</cite>
   <blockquote cite="www.google.com">
     E=mc <sup>2</sup>
